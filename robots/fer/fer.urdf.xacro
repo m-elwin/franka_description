@@ -48,5 +48,5 @@
                       robot_ip="$(arg robot_ip)"
                       use_fake_hardware="$(arg use_fake_hardware)"
                       fake_sensor_commands="$(arg fake_sensor_commands)"
-                      gazebo_effort="$(arg gazebo_effort)">
+                      gazebo_effort="$(arg gazebo_effort)" />
 </robot>

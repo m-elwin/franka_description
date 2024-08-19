@@ -50,7 +50,7 @@
         arm_id="${arm_id}"
         ee_id="${ee_id}_${ee_color}"
         ee_inertials="${xacro.load_yaml('$(find franka_description)/end_effectors/$(arg ee_id)/inertials.yaml')}"
-        rpy="$(arg rpy)"
+        rpy="0 0 ${-pi/4 if arm_id == 'fer' else 0}"
         xyz="$(arg xyz)"
         tcp_xyz="$(arg tcp_xyz)"
         tcp_rpy="$(arg tcp_rpy)"
